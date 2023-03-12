@@ -1,0 +1,9 @@
+CC=gcc
+SRC=2-main.c print_array.c print_list.c 1-insertion_sort_list.c 0-bubble_sort.c 2-selection_sort.c
+OBJ=$(patsubst %.c, %.o, $(SRC))
+NAME=selection
+CFLAGS=-Wall -Werror -Wextra -pedantic -std=gnu89
+
+.PHONY: all
+all: sort.h $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
