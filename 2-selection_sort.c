@@ -3,7 +3,6 @@
 /**
  * selection_sort - Sorts an array of integers using the selection
  * sorting algorithm
- * 
  * @array: The array to sort
  * @size: The size of the array to sort
  *
