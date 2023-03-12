@@ -25,11 +25,10 @@ void selection_sort(int *array, size_t size)
 				temp = array[current];
 				array[current] = array[compare];
 				array[compare] = temp;
-
-				print_array(array, size);
 			}
 			compare++;
 		}
+		print_array(array, size);
 		current++;
 	}
 }
